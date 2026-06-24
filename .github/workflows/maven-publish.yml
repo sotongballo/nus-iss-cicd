@@ -4,11 +4,11 @@
 name: Maven Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [created]
 
 jobs:
-  build:
+  build-with-jdk-17:
 
     runs-on: ubuntu-latest
     permissions:
