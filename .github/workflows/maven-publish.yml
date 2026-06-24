@@ -5,15 +5,12 @@ name: Maven Package
 
 on:
   push:
-    branches: [created]
+    branches: [main]
 
 jobs:
   build-with-jdk-17:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
 
     steps:
     - uses: actions/checkout@v4
